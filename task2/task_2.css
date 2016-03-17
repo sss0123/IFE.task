@@ -1,0 +1,137 @@
+body{
+    margin: 0.1em;
+    background-color:#dddddd;
+    /*border-style: dotted;
+    border-width: thick;*/
+}
+/*header,article,aside,footer{
+    display: block;
+}*/
+article,aside{
+    margin: 1em 1em;
+    padding: 1em 1em;
+    box-shadow: 0.1em 0.1em 0.1em #808080;
+    background-color: white;
+}
+header,footer{
+    background-color: #222222;
+    padding: 0em;
+}
+header img{
+    width: 10em;
+}
+header ul{
+    float: right;
+}
+/*header nav{
+    display: block;
+    float: right;
+}*/
+header  li{
+    float: left;
+    width: 6.0em;
+    padding-top: 0.5em;
+}
+header li a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+}
+article h2,article h3{
+    font-family: "Microsoft YaHei",serif;
+}
+article h3, article>span{
+    color: #555;
+}
+article span{
+    font-size: 0.8em;
+}
+article p{
+    text-indent: 2em;
+    line-height: 2em;
+}
+article ul{
+    list-style-type: none;
+    line-height: 2em;
+}
+article dl dd span{
+    display: block;
+    font-size: 0.85em;
+}
+article dl dd{
+    display: block;
+    border-style: solid;
+    border-width: thin;
+    padding: 10px 0;
+    margin-bottom: 1em;
+    width: 15em;
+    text-align: center;
+}
+dd img{
+    width:90%;
+}
+article ol li{
+    line-height: 2em;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    border-color: silver;
+    font-size: 0.8em;
+
+}
+article table thead{
+    background-color:#444444 ;
+    color: white;
+    font-weight: bold;
+}
+article table tfoot{
+    background-color: #cccccc;
+}
+table td{
+    padding: 5px;
+}
+aside h3{
+    border-left-color: #dddddd;
+    border-left-style: solid;
+    padding: 0.5em;
+}
+div.tableRow{
+    display: table-row;
+}
+div.tableRow p{
+    display: table-cell;
+    padding: 5px;
+    vertical-align: top;
+    font-size: 0.8em;
+}
+div.tableRow p:first-child{
+    text-align: right;
+}
+#table{
+    margin: auto 50px auto 250px;
+}
+form textarea{
+    width:500px;
+    height: 100px;
+}
+p.special{
+    color:#808080;
+}
+#submit{
+    width: 100%;
+    text-align: center;
+    background-color: #3456d0;
+    height: 40px;
+    margin: 5px 0;
+    border-radius: 10px;
+    color:white;
+    font-size: 1.2em;
+    border-style: none;
+}
+footer{
+    padding: 20px 0 35px 0 ;
+    text-align: center;
+    color:white;
+    font-size: 0.8em;
+}
