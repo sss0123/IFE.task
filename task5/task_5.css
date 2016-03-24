@@ -1,0 +1,142 @@
+/*{
+    padding: 0;
+    margin: 0;
+}*/
+body{
+    margin: 0;
+    background-color:#dddddd;
+    min-width: 550px;
+}
+article,aside{
+    margin: 1em 1em;
+    padding: 1em 1em;
+    box-shadow: 0.1em 0.1em 0.1em #888;
+    background-color: white;
+    border-style: solid;
+    border-width: thin;
+    border-color: #ccc;
+}
+header,footer{
+    background-color: #222;
+}
+
+#main{
+    margin-right: 395px;
+}
+#right{
+    float: right;
+}
+footer{
+    clear:both;
+}
+
+header ul{
+    float: right;
+}
+header  li{
+    float: left;
+    width: 6.0em;
+    padding-top: 0.5em;
+}
+header li a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+}
+article h2,article h3{
+    font-family: "Microsoft YaHei",serif;
+}
+article h3, article>span{
+    color: #555;
+}
+article span{
+    font-size: 0.8em;
+}
+article p{
+    text-indent: 2em;
+    line-height: 2em;
+}
+article ul{
+    list-style-type: none;
+    line-height: 2em;
+}
+article dl dd span{
+    display: block;
+    font-size: 0.85em;
+}
+article dl dd{
+    float: left;
+    border-style: solid;
+    border-width: thin;
+    border-color: #ccc;
+    padding: 10px 10px;
+    margin-bottom: 1em;
+    width: 10em;
+    text-align: center;
+}
+ section img{
+    width:100%;
+}
+.clear{
+    clear: both;
+}
+article ol li{
+    line-height: 2em;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    border-color: silver;
+    font-size: 0.8em;
+
+}
+article table thead{
+    background-color:#444444 ;
+    color: white;
+    font-weight: bold;
+}
+article table tfoot{
+    background-color: #cccccc;
+}
+table td{
+    padding: 5px;
+}
+aside h3{
+    border-left-color: #dddddd;
+    border-left-style: solid;
+    padding: 0.5em;
+}
+table textarea{
+    width:90%;
+    font-size: 1.5em;
+}
+.position{
+    text-align: right;
+}
+.style{
+    font-size:0.8em;
+    color:#808080;
+}
+.position2{
+    vertical-align: top;
+    text-align: right;
+}
+
+#submit{
+    width: 100%;
+    text-align: center;
+    background-color: #3456d0;
+    height: 40px;
+    margin: 5px 0;
+    border-radius: 10px;
+    color:white;
+    font-size: 1.2em;
+    border-style: none;
+}
+footer{
+    padding: 20px 0 35px 0 ;
+    text-align: center;
+    color:white;
+    font-size: 0.8em;
+    background-color: black;
+}
