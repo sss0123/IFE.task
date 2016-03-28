@@ -1,0 +1,323 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #5e5e5e;
+}
+#newspaper{
+    width: 892px;
+    height: 1386px;
+    margin: auto;
+    background-color:white;
+    padding: 0 44px;
+}
+header .color{
+    width: 110px;
+    height: 61px;
+    background-color:#d55e5d;
+    color: #ffffff;
+    /*line-height: 95px;*/  /*也可以用这个使字下移*/
+}
+header .color p, header .smaller{
+    padding-top: 43px; /*为啥用margin-top不行呢*/
+    font-size: 12px;
+    font-family: SimHei;
+}
+header .color p{
+    padding-left: 5px;
+}
+header .smaller{
+    color: #d45d5c;
+    float: right;
+    /*line-height: 95px;*/
+}
+#newspaper> header{
+    border-bottom: 2px solid #938e8c;
+}
+
+#part1{
+    margin-top: 35px;
+}
+.title{
+    float: right;
+    width: 203px;
+    height: 301px;
+    border-top: 2px solid #cc8091;
+}
+.title>p:first-child, .title>p:nth-child(2){
+    font: 24px 'Microsoft YaHei',sans-serif;
+    text-decoration: underline;
+    font-variant: small-caps;
+    color: #000000;
+}
+.title>p:first-child{
+    line-height: 40px;
+}
+.title>p:nth-child(3){
+    font:oblique 12px KaiTi, sans-serif;
+    color: #676767;
+    line-height: 10px;
+}
+.title>p:nth-child(4){
+    font: italic bold 110px 'Microsoft YaHei',sans-serif;
+    color: #75b86b;
+    margin-left: -18px;
+}
+.title>p:nth-child(5){
+    font: 55px 'Microsoft YaHei', sans-serif;
+    color: #cc8091;
+    float: left;
+    margin-left: 5px;
+}
+.small{
+    float: left;
+    margin-top: 32px;
+    margin-left: 8px;
+    line-height: 10px;  /*行高没搞明白很诡异*/
+}
+.small span{
+    font: 21px 'Microsoft YaHei', sans-serif;
+    color: #cc8091;
+    line-height: 10px;
+}
+.small p{
+    font: 12px 'Microsoft YaHei', sans-serif;
+    color: #b7b7b7;
+}
+header img{
+    width: 641px;
+    height: 301px;
+}
+#part1 article div{
+    width: 230px;
+    float: left;
+    margin: 28px 30px auto 0;
+}
+#part1 article>div p{
+    font: 12px 'Microsoft YaHei', sans-serif;
+    line-height: 16px;
+    color: #231815;
+    opacity: 0.7;
+}
+#part1 h3{
+    font: bold 16px 'Microsoft YaHei', sans-serif;
+    text-decoration: underline;
+    line-height: 30px;
+}
+.col1 h3{
+    color: #418c56;
+}
+.col2 h3{
+    color: #d2994f;
+}
+.col3 h3{
+    color: #cc7680;
+}
+/*.col3 p{
+    line-height: 22px;
+} 为什么这么操作任何属性没反应？？*/
+.details i{
+    font: italic 12px 'Microsoft YaHei', sans-serif;
+    color: #cd4a48;
+    line-height: 22px;  /*为什么给 .details p 设置行高没反应*/
+}
+#part2{
+    clear: left;
+    border-bottom: 1px solid #938e8c;
+    padding: 70px 0 40px 0; /*在这块要是用margin的话，要注意part1由于最后的文字列是浮动的，所以它的border在图片那*/
+}
+#left{
+    width: 415px;
+    float: left;
+}
+#right{
+    width: 458px;
+    float: right;
+    position: relative;
+}
+.clear{
+    clear:both;
+}
+footer{
+    float: right;
+    font: 12px SimHei, sans-serif;
+    color: #d45d5c;
+    padding-top: 3px;
+}
+#left header{
+    border-bottom: 2px solid #11456b;
+    margin-bottom: 8px;
+}
+#left header p:first-child{
+    font: bold 42px SimHei, sans-serif;
+    color: #11456b;
+    margin: -15px 0;
+    line-height: 16px;
+}
+#left header p:nth-child(2){
+    font: bold 33px SimHei, sans-serif;
+    color: #11456b;
+    padding: 35px 0 10px 0;
+}
+#left header i{
+    font: bold oblique 72px SimHei, sans-serif;
+    color: #f5e327;
+}
+#left article span{
+    font: 70px 'Microsoft YaHei', sans-serif;
+    color: #f5e327;
+    float: left;
+    padding-right: 5px;
+}
+#left article img{
+    float: right;
+    padding: 15px 0 15px 15px;
+}
+#left article .indent{
+    text-indent: 26px;
+}
+#left article .words{
+    padding-top: 13px;
+    font: 12px SimSun, sans-serif;
+    color: #767777;
+    line-height: 16px;
+    text-align: justify;
+}
+
+#right img{
+    width: 458px;
+    height: 275px;
+}
+.bottom{
+    width: 458px;
+    height: 318px;
+    background-color: #eeeed6;
+    margin-top: 30px;
+}
+.bottom .ul {
+    font: 16px SimSun, sans-serif;
+    line-height: 30px;
+    color: #5a5b5b;
+    text-justify: distribute;
+    padding: 25px 0 0 25px;
+}
+.bottom .ul p {
+    background-image: url("img/icon.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 15px;
+    text-justify: distribute;  /*为什么不管用，左栏文本最后一行为啥也不能对齐？*/
+}
+.bottom .ul i{
+    font-size: 12px;
+    text-align: right;
+}
+.red{
+    width: 260px;
+    height: 160px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #d45d5c;
+}
+.last{
+    font: italic 14px SimHei, sans-serif;
+    line-height: 16px;
+    color: #5a5b5b;
+    float: right;
+    width: 180px;
+    position: relative;
+    margin-top: 55px;
+}
+.last p{
+    text-indent: 3em;
+}
+.big1, .big2{
+    color: #d55e5d;
+    font-size: 72px;
+    font-style: normal;
+    position: absolute;
+}
+.big1{
+    left: -35px;
+    top: 15px;
+}
+.big2{
+    right: -20px;
+    bottom: -30px;
+}
+.zero{
+    font: 110px 'Microsoft YaHei', sans-serif;
+    color: #ffffff;
+    border-right: 2px solid #ffffff;
+    width: 60px;
+    line-height: 86px;
+    padding: 0 10px;
+    float: left;
+    margin: 37px 0;
+}
+.red p:nth-child(2){
+    margin-top: 37px;
+}
+.red p{
+    font: 12px SimHei, sans-serif;
+    color: #ffffff;
+    line-height: 18px;
+    margin: 0 5px 0 90px;
+}
+.red p:nth-child(2), .red p:nth-child(3){
+    font: italic 21px SimHei, sans-serif;
+    line-height: 24px;
+}
+#part1 .style1{
+    position: relative;
+    width: 641px;
+    height: 301px;
+}
+#part1 .greenStyle, #part1 .redStyle{
+    width: 191px;
+    height: 301px;
+    opacity: 0.5;
+    position: absolute;
+    /*z-index=-1;/*z-index仅能在定位元素上奏效，所以这里设置没有作用*/
+}
+#part1 .greenStyle{
+
+    top: 0;
+    left: 0;
+    background-color: #418c59;
+}
+#part1 .redStyle{
+    top: 0;
+    right: 0;
+    background-color: #cc7680;
+}
+#right .style2{
+    width: 458px;
+    height: 275px;
+    position: relative;
+}
+#right .blackStyle{
+    background-color: rgb(0,0,0); /*考虑低版本浏览器的兼容问题*/
+    background-color: rgba(0,0,0,0.3);
+    width: 458px;
+    height: 61px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+#right .blackStyle p{
+    font: 26px 'Microsoft YaHei', sans-serif;
+    color: #ffffff;
+    z-index: 2;
+    border-left: 3px solid #72b16a;
+    height: 44px;
+    margin: 8.5px auto 8.5px 25px;
+    padding-left: 13px;
+}
+#right .blackStyle  span{
+    font: italic 15px 'Microsoft YaHei', sans-serif;
+    color: #72b16a;
+    word-spacing: 140%; /*加了没反应呀*/
+}
